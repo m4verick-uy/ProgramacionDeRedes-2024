@@ -14,11 +14,11 @@ channel.QueueDeclare(queue: "hello",
 
 Console.WriteLine(" [*] Waiting for messages.");
 
-var consumer = new EventingBasicConsumer(channel);
-consumer.Received += (model, ea) =>
+var consumer = new EventingBasicConsumer(channel); // Defino el consumidor de mensajes
+consumer.Received += (model, ea) =>                // expresion lambda que se ejecuta al recibir un mensaje 
 {
-    var body = ea.Body.ToArray();
-    var message = Encoding.UTF8.GetString(body);
+    var body = ea.Body.ToArray();                   
+    var message = Encoding.UTF8.GetString(body);   
     Console.WriteLine($" [x] Received {message}");
     
     int dots = message.Split('.').Length - 1; // Simulo que trabajo 
@@ -26,9 +26,10 @@ consumer.Received += (model, ea) =>
 
     Console.WriteLine(" [x] Done");
 };
-channel.BasicConsume(queue: "hello",
-    autoAck: true,
-    consumer: consumer);
+channel.BasicConsume(                        // Consumo mensajes
+    queue: "hello",                          // de la cola hello
+    autoAck: true,                           // y los elimino
+    consumer: consumer);                     // automáticamente
 
 Console.WriteLine(" Press [enter] to exit.");
 Console.ReadLine();
