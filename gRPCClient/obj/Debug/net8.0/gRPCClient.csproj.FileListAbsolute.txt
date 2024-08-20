@@ -1,0 +1,15 @@
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/gRPCClient/bin/Debug/net8.0/gRPCClient
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/gRPCClient/bin/Debug/net8.0/gRPCClient.deps.json
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/gRPCClient/bin/Debug/net8.0/gRPCClient.runtimeconfig.json
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/gRPCClient/bin/Debug/net8.0/gRPCClient.dll
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/gRPCClient/bin/Debug/net8.0/gRPCClient.pdb
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/gRPCClient/obj/Debug/net8.0/gRPCClient.GeneratedMSBuildEditorConfig.editorconfig
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/gRPCClient/obj/Debug/net8.0/gRPCClient.AssemblyInfoInputs.cache
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/gRPCClient/obj/Debug/net8.0/gRPCClient.AssemblyInfo.cs
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/gRPCClient/obj/Debug/net8.0/gRPCClient.csproj.CoreCompileInputs.cache
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/gRPCClient/obj/Debug/net8.0/gRPCClient.sourcelink.json
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/gRPCClient/obj/Debug/net8.0/gRPCClient.dll
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/gRPCClient/obj/Debug/net8.0/refint/gRPCClient.dll
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/gRPCClient/obj/Debug/net8.0/gRPCClient.pdb
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/gRPCClient/obj/Debug/net8.0/gRPCClient.genruntimeconfig.cache
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/gRPCClient/obj/Debug/net8.0/ref/gRPCClient.dll

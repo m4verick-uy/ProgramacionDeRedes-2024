@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jkIYtjLKt2g8V1HfnbnNCt63QMyBW/h1sda03bkfjDg=",
+  "Source": "servidorGRPC",
+  "BasePath": "_content/servidorGRPC",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
