@@ -1,0 +1,49 @@
+# Ignore the .idea folder (for JetBrains IDEs like Rider)
+.idea/
+
+# Ignore Rider-specific files
+*.sln.iml
+*.suo
+*.user
+*.userosscache
+*.sln.dotSettings
+*.sln.DotSettings.user
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/.idea_name
+.idea/.idea_workspace.xml
+.idea/.idea_*.xml
+.idea/*/*.xml
+.idea/dictionaries
+.idea/shelf
+.idea/modules.xml
+.idea/vcs.xml
+.idea/httpRequests
+.idea/libraries
+.idea/runConfigurations
+.idea/compiler.xml
+
+# Ignore .NET 8 generated files and directories
+bin/
+obj/
+project.lock.json
+project.fragment.lock.json
+project.nuget.cache
+project.nuget.dgspec.json
+*.log
+*.sln.docstates
+.vscode/
+
+# Ignore build outputs
+*.dll
+*.exe
+*.pdb
+*.cache
+*.config
+*.so
+*.dylib
+*.lock.json
+*.msi
+*.nupkg
+*.map
+*.js.map
