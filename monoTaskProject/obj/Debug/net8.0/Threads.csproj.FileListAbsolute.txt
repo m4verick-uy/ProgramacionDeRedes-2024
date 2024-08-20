@@ -1,0 +1,15 @@
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Threads/bin/Debug/net8.0/Threads
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Threads/bin/Debug/net8.0/Threads.deps.json
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Threads/bin/Debug/net8.0/Threads.runtimeconfig.json
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Threads/bin/Debug/net8.0/Threads.dll
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Threads/bin/Debug/net8.0/Threads.pdb
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Threads/obj/Debug/net8.0/Threads.GeneratedMSBuildEditorConfig.editorconfig
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Threads/obj/Debug/net8.0/Threads.AssemblyInfoInputs.cache
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Threads/obj/Debug/net8.0/Threads.AssemblyInfo.cs
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Threads/obj/Debug/net8.0/Threads.csproj.CoreCompileInputs.cache
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Threads/obj/Debug/net8.0/Threads.sourcelink.json
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Threads/obj/Debug/net8.0/Threads.dll
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Threads/obj/Debug/net8.0/refint/Threads.dll
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Threads/obj/Debug/net8.0/Threads.pdb
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Threads/obj/Debug/net8.0/Threads.genruntimeconfig.cache
+/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Threads/obj/Debug/net8.0/ref/Threads.dll
