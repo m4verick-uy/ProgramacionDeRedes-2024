@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/monoTaskProject/monoTaskProject.csproj",
-      "projectName": "monoTaskProject",
-      "projectPath": "/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/monoTaskProject/monoTaskProject.csproj",
+      "projectUniqueName": "/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/monoTaskExample/monoTaskExample.csproj",
+      "projectName": "monoTaskExample",
+      "projectPath": "/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/monoTaskExample/monoTaskExample.csproj",
       "packagesPath": "/Users/m4verick/.nuget/packages/",
-      "outputPath": "/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/monoTaskProject/obj/",
+      "outputPath": "/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/monoTaskExample/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/m4verick/.nuget/NuGet/NuGet.Config"

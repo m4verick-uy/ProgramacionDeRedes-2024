@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("multiTaskExample")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("monoTaskExample")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11388d83ff32e23d61b0dfb3343a7165fc91d80f")]
-[assembly: System.Reflection.AssemblyProductAttribute("multiTaskExample")]
-[assembly: System.Reflection.AssemblyTitleAttribute("multiTaskExample")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea90f88688196295205fe92992a0f2c399557d7f")]
+[assembly: System.Reflection.AssemblyProductAttribute("monoTaskExample")]
+[assembly: System.Reflection.AssemblyTitleAttribute("monoTaskExample")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

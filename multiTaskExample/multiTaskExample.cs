@@ -1,5 +1,8 @@
 ﻿namespace multiTaskExample;
 
+
+using System.Threading;
+
 class multiTaskExample
 {
     static void Main(string[] args)
@@ -14,15 +17,17 @@ class multiTaskExample
         
         // Wait for the threads to finish
         //t1.Join();
-        //t2.Join();
+        t2.Join();
+        
+        Console.WriteLine("Continua el programa después de los threads");
     }
     
     static void PrintNumbers()
     {
-        for (int i = 0; i <= 5; i++)
+        for (int i = 0; i <= 10; i++)
         {
             Console.WriteLine(i);
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
         }
     }
 
@@ -31,7 +36,7 @@ class multiTaskExample
         for (char c = 'A'; c <= 'E'; c++)
         {
             Console.WriteLine(c);
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
         }
     }
 }
