@@ -1,6 +1,5 @@
 ﻿namespace multiTaskExample;
 
-
 using System.Threading;
 
 class multiTaskExample
@@ -15,11 +14,12 @@ class multiTaskExample
         t1.Start();
         t2.Start();
         
+        
         // Wait for the threads to finish
         //t1.Join();
-        t2.Join();
+        //t2.Join();
         
-        Console.WriteLine("Continua el programa después de los threads");
+        Console.WriteLine("El hilo principal termina y no espera a los hilos de background.");
     }
     
     static void PrintNumbers()
