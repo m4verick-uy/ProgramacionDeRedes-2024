@@ -7,4 +7,4 @@ Repositorio dedicado para consulta de material teórico y práctico.
 Este repositorio agrupa el material de la asignatura "Programación de Redes" de 2024. Los recursos se organizan por práctico, incluyendo ejercicios de laboratorio, o por tema, con ejemplos y ejercicios relacionados.
 
 ## Autor
-#### [**Guillermo Echichure**](mailto:GE151381@fi365.ort.edu.uy)
+#### [**Guillermo Echichure**](mailto:gechichure@gmail)
