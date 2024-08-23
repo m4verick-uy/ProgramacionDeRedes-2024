@@ -1,0 +1,15 @@
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample/bin/Debug/net8.0/backgroundThreadsExample
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample/bin/Debug/net8.0/backgroundThreadsExample.deps.json
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample/bin/Debug/net8.0/backgroundThreadsExample.runtimeconfig.json
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample/bin/Debug/net8.0/backgroundThreadsExample.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample/bin/Debug/net8.0/backgroundThreadsExample.pdb
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample/obj/Debug/net8.0/backgroundThreadsExample.GeneratedMSBuildEditorConfig.editorconfig
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample/obj/Debug/net8.0/backgroundThreadsExample.AssemblyInfoInputs.cache
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample/obj/Debug/net8.0/backgroundThreadsExample.AssemblyInfo.cs
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample/obj/Debug/net8.0/backgroundThreadsExample.csproj.CoreCompileInputs.cache
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample/obj/Debug/net8.0/backgroundThreadsExample.sourcelink.json
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample/obj/Debug/net8.0/backgroundThreadsExample.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample/obj/Debug/net8.0/refint/backgroundThreadsExample.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample/obj/Debug/net8.0/backgroundThreadsExample.pdb
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample/obj/Debug/net8.0/backgroundThreadsExample.genruntimeconfig.cache
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample/obj/Debug/net8.0/ref/backgroundThreadsExample.dll

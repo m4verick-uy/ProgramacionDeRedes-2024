@@ -1,0 +1,15 @@
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Practico_1/Ejercicio1/bin/Debug/net8.0/Ejercicio1
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Practico_1/Ejercicio1/bin/Debug/net8.0/Ejercicio1.deps.json
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Practico_1/Ejercicio1/bin/Debug/net8.0/Ejercicio1.runtimeconfig.json
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Practico_1/Ejercicio1/bin/Debug/net8.0/Ejercicio1.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Practico_1/Ejercicio1/bin/Debug/net8.0/Ejercicio1.pdb
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Practico_1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.GeneratedMSBuildEditorConfig.editorconfig
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Practico_1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.AssemblyInfoInputs.cache
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Practico_1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.AssemblyInfo.cs
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Practico_1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.csproj.CoreCompileInputs.cache
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Practico_1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.sourcelink.json
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Practico_1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Practico_1/Ejercicio1/obj/Debug/net8.0/refint/Ejercicio1.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Practico_1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.pdb
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Practico_1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.genruntimeconfig.cache
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Practico_1/Ejercicio1/obj/Debug/net8.0/ref/Ejercicio1.dll

@@ -1,0 +1,15 @@
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample2/bin/Debug/net8.0/backgroundThreadsExample2
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample2/bin/Debug/net8.0/backgroundThreadsExample2.deps.json
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample2/bin/Debug/net8.0/backgroundThreadsExample2.runtimeconfig.json
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample2/bin/Debug/net8.0/backgroundThreadsExample2.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample2/bin/Debug/net8.0/backgroundThreadsExample2.pdb
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample2/obj/Debug/net8.0/backgroundThreadsExample2.GeneratedMSBuildEditorConfig.editorconfig
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample2/obj/Debug/net8.0/backgroundThreadsExample2.AssemblyInfoInputs.cache
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample2/obj/Debug/net8.0/backgroundThreadsExample2.AssemblyInfo.cs
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample2/obj/Debug/net8.0/backgroundThreadsExample2.csproj.CoreCompileInputs.cache
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample2/obj/Debug/net8.0/backgroundThreadsExample2.sourcelink.json
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample2/obj/Debug/net8.0/backgroundThreadsExample2.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample2/obj/Debug/net8.0/refint/backgroundThreadsExample2.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample2/obj/Debug/net8.0/backgroundThreadsExample2.pdb
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample2/obj/Debug/net8.0/backgroundThreadsExample2.genruntimeconfig.cache
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/backgroundThreadsExample2/obj/Debug/net8.0/ref/backgroundThreadsExample2.dll

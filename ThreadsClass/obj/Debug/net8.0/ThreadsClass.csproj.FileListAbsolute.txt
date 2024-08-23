@@ -1,0 +1,15 @@
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/ThreadsClass/bin/Debug/net8.0/ThreadsClass
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/ThreadsClass/bin/Debug/net8.0/ThreadsClass.deps.json
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/ThreadsClass/bin/Debug/net8.0/ThreadsClass.runtimeconfig.json
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/ThreadsClass/bin/Debug/net8.0/ThreadsClass.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/ThreadsClass/bin/Debug/net8.0/ThreadsClass.pdb
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/ThreadsClass/obj/Debug/net8.0/ThreadsClass.GeneratedMSBuildEditorConfig.editorconfig
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/ThreadsClass/obj/Debug/net8.0/ThreadsClass.AssemblyInfoInputs.cache
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/ThreadsClass/obj/Debug/net8.0/ThreadsClass.AssemblyInfo.cs
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/ThreadsClass/obj/Debug/net8.0/ThreadsClass.csproj.CoreCompileInputs.cache
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/ThreadsClass/obj/Debug/net8.0/ThreadsClass.sourcelink.json
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/ThreadsClass/obj/Debug/net8.0/ThreadsClass.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/ThreadsClass/obj/Debug/net8.0/refint/ThreadsClass.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/ThreadsClass/obj/Debug/net8.0/ThreadsClass.pdb
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/ThreadsClass/obj/Debug/net8.0/ThreadsClass.genruntimeconfig.cache
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/ThreadsClass/obj/Debug/net8.0/ref/ThreadsClass.dll

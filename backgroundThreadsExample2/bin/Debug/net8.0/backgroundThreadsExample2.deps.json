@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "backgroundThreadsExample2/1.0.0": {
+        "runtime": {
+          "backgroundThreadsExample2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "backgroundThreadsExample2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
