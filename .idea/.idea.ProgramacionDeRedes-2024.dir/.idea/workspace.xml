@@ -16,49 +16,17 @@
     <projectFile>multiTaskExample/multiTaskExample.csproj</projectFile>
     <projectFile profileName="http">servidorGRPC/servidorGRPC.csproj</projectFile>
     <projectFile profileName="https">servidorGRPC/servidorGRPC.csproj</projectFile>
+    <projectFile>threadStartExample/threadStartExample.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8320161-ab7d-418c-9b5d-184956e8be44" name="Changes" comment="Ejemplo de aplicaciones mono tarea y multi tarea utilizando la libreria threads.">
-      <change afterPath="$PROJECT_DIR$/monoTaskExample/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monoTaskExample/obj/Debug/net8.0/monoTaskExample.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monoTaskExample/obj/Debug/net8.0/monoTaskExample.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monoTaskExample/obj/Debug/net8.0/monoTaskExample.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monoTaskExample/obj/Debug/net8.0/monoTaskExample.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monoTaskExample/obj/Debug/net8.0/monoTaskProject.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monoTaskExample/obj/monoTaskExample.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monoTaskExample/obj/monoTaskProject.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monoTaskExample/obj/monoTaskProject.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monoTaskExample/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monoTaskExample/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monoTaskExample/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/threadStartExample/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/threadStartExample/threadStartExample.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgramacionDeRedes-2024.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgramacionDeRedes-2024.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Folder.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Folder.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/bin/Debug/net8.0/Threads.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/bin/Debug/net8.0/Threads.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/bin/Debug/net8.0/Threads.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/bin/Debug/net8.0/Threads.runtimeconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/bin/Debug/net8.0/monoTaskProject.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/bin/Debug/net8.0/monoTaskProject.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/bin/Debug/net8.0/monoTaskProject.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/bin/Debug/net8.0/monoTaskProject.runtimeconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/monoTaskExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/monoTaskExample.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/monoTaskProject.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/monoTaskExample.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/obj/Debug/net8.0/Threads.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/obj/Debug/net8.0/Threads.GlobalUsings.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/obj/Debug/net8.0/Threads.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/obj/Debug/net8.0/Threads.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/obj/Debug/net8.0/monoTaskProject.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/obj/Debug/net8.0/monoTaskExample.GlobalUsings.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/obj/Debug/net8.0/monoTaskProject.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/obj/Debug/net8.0/monoTaskProject.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/obj/Debug/net8.0/monoTaskProject.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/obj/Debug/net8.0/monoTaskProject.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/obj/Threads.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/obj/Threads.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/obj/Threads.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/obj/Threads.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/obj/Threads.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/obj/Threads.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/obj/monoTaskProject.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/obj/monoTaskProject.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/obj/monoTaskProject.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/obj/monoTaskExample.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/obj/monoTaskProject.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/obj/monoTaskExample.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/monoTaskExample/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monoTaskProject/obj/rider.project.restore.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multiTaskExample/multiTaskExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/multiTaskExample/multiTaskExample.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multiTaskExample/obj/Debug/net8.0/multiTaskExample.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/multiTaskExample/obj/Debug/net8.0/multiTaskExample.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multiTaskExample/obj/Debug/net8.0/multiTaskExample.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/multiTaskExample/obj/Debug/net8.0/multiTaskExample.sourcelink.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +38,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/multiTaskExample/multiTaskExample.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/threadStartExample/Program.cs" root0="SKIP_INSPECTION" />
   </component>
   <component name="JsBowerSettings">
     <bower-package value="" />
@@ -92,6 +61,7 @@
   "keyToString": {
     ".NET Project.monoTaskExample.executor": "Run",
     ".NET Project.multiTaskExample.executor": "Run",
+    ".NET Project.threadStartExample.executor": "Run",
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "HbShouldOpenHtmlAsHb": "disabled",
@@ -116,7 +86,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.multiTaskExample">
+  <component name="RunManager" selected=".NET Project.threadStartExample">
     <configuration name="monoTaskExample" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Threads/bin/Debug/net8.0/Threads" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -149,6 +119,24 @@
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
       <option name="PROJECT_TFM" value="net8.0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="threadStartExample" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/threadStartExample/threadStartExample.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -330,6 +318,7 @@
       <item itemvalue=".NET Launch Settings Profile.WebApplication3: https" />
       <item itemvalue=".NET Launch Settings Profile.servidorGRPC: http" />
       <item itemvalue=".NET Launch Settings Profile.servidorGRPC: https" />
+      <item itemvalue=".NET Project.threadStartExample" />
       <item itemvalue=".NET Project.multiTaskExample" />
       <item itemvalue=".NET Project.monoTaskExample" />
     </list>
@@ -348,6 +337,7 @@
       <workItem from="1717096219980" duration="6998000" />
       <workItem from="1724124181449" duration="31000" />
       <workItem from="1724124222123" duration="2601000" />
+      <workItem from="1724765796072" duration="2444000" />
     </task>
     <task id="LOCAL-00001" summary="Ejemplo de aplicaciones mono tarea y multi tarea utilizando la libreria threads.">
       <option name="closed" value="true" />
