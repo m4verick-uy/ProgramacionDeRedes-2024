@@ -14,7 +14,7 @@ finally
 }
 ```
 
-### Ejemplo sin `Monitor` (Primera salida)
+### Ejemplo sin `Monitor` (noMonitorExample)
 
 - **Salida no controlada:** Los hilos ejecutan el método `SaveDataToDatabase` simultáneamente sin coordinación, lo que lleva a que los mensajes de "Guardando datos" puedan intercalarse, y los hilos no respetan un orden de ejecución. Esto puede causar que la salida sea impredecible, dependiendo del orden en que los hilos lleguen a la consola.
 
