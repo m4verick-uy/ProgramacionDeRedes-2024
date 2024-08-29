@@ -23,10 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8320161-ab7d-418c-9b5d-184956e8be44" name="Changes" comment="Ejemplo de aplicaciones mono tarea y multi tarea utilizando la libreria threads.">
-      <change afterPath="$PROJECT_DIR$/threadStartExample/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/threadStartExample/threadStartExample.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgramacionDeRedes-2024.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgramacionDeRedes-2024.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Folder.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Folder.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/threadStartExample/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/threadStartExample/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,7 +335,7 @@
       <workItem from="1717096219980" duration="6998000" />
       <workItem from="1724124181449" duration="31000" />
       <workItem from="1724124222123" duration="2601000" />
-      <workItem from="1724765796072" duration="2444000" />
+      <workItem from="1724765796072" duration="4598000" />
     </task>
     <task id="LOCAL-00001" summary="Ejemplo de aplicaciones mono tarea y multi tarea utilizando la libreria threads.">
       <option name="closed" value="true" />

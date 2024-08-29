@@ -4,8 +4,8 @@ using System.Threading;
 
 class Program
 {
-    /*
-    static void Main(string[] args)
+    
+    /*static void Main(string[] args)
     {
         // Ejemplo usando un delegado que representa el método que se ejecutará en un subproceso.
         Thread thread = new Thread(new ThreadStart(DoWork));
@@ -21,20 +21,21 @@ class Program
             Console.WriteLine(i);
             Thread.Sleep(500);
         }
-    }
-    */
+    }*/
+    
     
     // #####################################################################
     
-    /*
+    
     // Ejempplo sin usar delegado ThreadStart 
-    static void Main (string[] args)
+    /*static void Main (string[] args)
     {
         Thread thread = new Thread(DoWork);
         thread.Start();
         thread.Join();
         Console.WriteLine("Continue main Thread...");    
     }
+    
     static void DoWork()
     {
         Console.WriteLine("Thread is running without delegado ThreadStart");
