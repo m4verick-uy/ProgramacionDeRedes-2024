@@ -1,4 +1,8 @@
-## Diferencia clave
+# Programación de Redes - 2024
+
+## threads
+
+### Diferencia entre Threads, ThreadStars y ParametrizedThreadStart 
 
 - **Thread** es la clase que maneja el hilo en sí mismo, permitiéndote controlarlo y administrarlo.
 - **ThreadStart** es un delegado en C# que representa un método que no toma parámetros y no devuelve valor (es decir, un `void`). Se utiliza para señalar qué método debe ejecutar el hilo cuando se inicia.
