@@ -11,4 +11,4 @@ primero se impriman todas las ‘x’. Haga esto de al menos 2 formas distintas.
 - **Primera Forma:** Uso de `Thread` y `Join`.
 - **Segunda Forma:** Uso de `Thread` y `AutoResetEvent` para sincronización.
 
-#### Autor: [**Guillermo Echichure**](mailto:GE151381@fi365.ort.edu.uy)
+#### Autor: [**Guillermo Echichure**](mailto:gechichure@gmail.com)

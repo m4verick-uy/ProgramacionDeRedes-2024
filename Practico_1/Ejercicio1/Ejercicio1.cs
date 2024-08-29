@@ -1,4 +1,4 @@
-﻿namespace Ejercicio1;
+﻿namespace Practico1;
 
 using System.Threading;
 
@@ -6,7 +6,7 @@ using System.Threading;
 // Solución usando Join()
 
 /*
-class Program
+class Ejercicio1
 {
     static void Main(string[] args)
     {
@@ -44,7 +44,7 @@ class Program
 
 // Solucion usando AutoResetEvent para sincronizar los threads
 
-class Program
+class Ejericio1
 {
     static AutoResetEvent autoEvent = new AutoResetEvent(false);
     
