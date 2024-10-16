@@ -7,7 +7,7 @@ namespace DesayunoAsync3
         static async Task Main(string[] args)
         {
             DateTime horaInicio = ObtenerTiempo();
-            
+           
             // Lanzamos las tareas asincrónicas en paralelo
             var preparandoHuevosTask = FreirHuevosAsync(2);
             var friendoPancetaTask = FreirPancetaAsync(3);
@@ -105,7 +105,7 @@ namespace DesayunoAsync3
 
             return new Tostada(cantidad);
         }
-        
+       
         static async Task<Jugo> ServirJugo() // 1 segundo
         {
             Console.WriteLine("Sirviendo jugo...");
