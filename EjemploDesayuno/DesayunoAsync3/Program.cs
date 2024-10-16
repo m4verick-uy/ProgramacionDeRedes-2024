@@ -12,8 +12,8 @@ namespace DesayunoAsync3
             var preparandoHuevosTask = FreirHuevosAsync(2);
             var friendoPancetaTask = FreirPancetaAsync(3);
             var tostandoPanTask = TostarPanAsync(2);
-            var jugoTask = ServirJugo();
-            var servirCafeTask = ServirCafe();
+            var jugoTask = ServirJugoAsync();
+            var servirCafeTask = ServirCafeAsync();
 
             var tareasDelDesayuno = new List<Task> { preparandoHuevosTask, friendoPancetaTask, tostandoPanTask, jugoTask, servirCafeTask };
 
@@ -58,7 +58,7 @@ namespace DesayunoAsync3
             return horaInicio;
         }
 
-        static async Task<Cafe> ServirCafe() // 2 segundos
+        static async Task<Cafe> ServirCafeAsync() // 2 segundos
         {
             Console.WriteLine("Sirviendo café...");
             await Task.Delay(2000); // Simulando una operación síncrona para simplificar
@@ -106,7 +106,7 @@ namespace DesayunoAsync3
             return new Tostada(cantidad);
         }
        
-        static async Task<Jugo> ServirJugo() // 1 segundo
+        static async Task<Jugo> ServirJugoAsync() // 1 segundo
         {
             Console.WriteLine("Sirviendo jugo...");
             await Task.Delay(1000);

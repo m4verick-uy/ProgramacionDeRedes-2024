@@ -25,9 +25,11 @@ namespace Desayuno
             Jugo jugoNaranja = ServirJugo();
             Console.WriteLine("El juego de naranja está pronto");
             Console.WriteLine();
+            
             Console.Write("¡El desayuno está servido!");
             DateTime horaFinalizacion = DateTime.Now;
             Console.WriteLine();
+            
             TimeSpan duracion = horaFinalizacion - horaInicio;
             Console.WriteLine($"Duración total: {duracion.TotalSeconds} segundos");
         }
