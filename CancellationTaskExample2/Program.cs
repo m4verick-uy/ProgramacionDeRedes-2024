@@ -4,12 +4,19 @@ class Program
 {
     static async Task Main(string[] args)
     {
+        // Crear un CancellationTokenSource
         CancellationTokenSource cts = new CancellationTokenSource();
+        
+        // Obtengo un token de cancelación
         CancellationToken token = cts.Token;
         
+        // Creo una tarea que se cancelará si el token de cancelación se activa
         var contador = contadorTask(token);
-
+        
+        // Leo cualquier tecla para cancelar la tarea
         Console.ReadKey();
+        
+        // Cancelo la tarea
         cts.Cancel();
 
         try
@@ -22,6 +29,7 @@ class Program
         }
         finally
         {
+            // Libero los recursos
             cts.Dispose();
         }
         
@@ -32,9 +40,10 @@ class Program
 
         for (int i = 0; i < 10; i++)
         {
-            if (token.IsCancellationRequested)
+            if (token.IsCancellationRequested) // Verifico si el token de cancelación se ha activado
             {
                 Console.WriteLine("¡Contador cancelado! 🚨");
+                // Lanzo una excepción para salir del bucle
                 throw new TaskCanceledException();    
             }
             Console.WriteLine(i);
@@ -43,5 +52,4 @@ class Program
 
         Console.WriteLine("¡Contador finalizado! 🎉");
     }
-    
 }
