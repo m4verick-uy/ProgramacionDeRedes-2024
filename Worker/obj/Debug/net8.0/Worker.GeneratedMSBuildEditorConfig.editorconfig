@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Worker
-build_property.ProjectDir = /Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Worker/
+build_property.ProjectDir = /home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Worker/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

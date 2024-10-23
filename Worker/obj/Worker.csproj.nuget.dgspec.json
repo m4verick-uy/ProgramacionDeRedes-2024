@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Worker/Worker.csproj": {}
+    "/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Worker/Worker.csproj": {}
   },
   "projects": {
-    "/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Worker/Worker.csproj": {
+    "/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Worker/Worker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Worker/Worker.csproj",
+        "projectUniqueName": "/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Worker/Worker.csproj",
         "projectName": "Worker",
-        "projectPath": "/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Worker/Worker.csproj",
-        "packagesPath": "/Users/m4verick/.nuget/packages/",
-        "outputPath": "/Users/m4verick/RiderProjects/node-rest-api/ProgramacionDeRedes-2024/Worker/obj/",
+        "projectPath": "/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Worker/Worker.csproj",
+        "packagesPath": "/home/m4verick/.nuget/packages/",
+        "outputPath": "/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Worker/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/m4verick/.nuget/NuGet/NuGet.Config"
+          "/home/m4verick/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
