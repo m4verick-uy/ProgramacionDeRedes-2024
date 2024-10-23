@@ -11,11 +11,11 @@ Este proyecto demuestra el uso básico de RabbitMQ en .NET 8, utilizando dos apl
 
 ### Publisher
 
-La clase `Publisher` en el proyecto `Publisher` realiza las siguientes tareas:
+La clase `Publish` en el proyecto `Publisher` realiza las siguientes tareas:
 
 1. **Establece una conexión con RabbitMQ**: Utiliza `ConnectionFactory` para conectarse al servidor RabbitMQ que está en ejecución en `localhost`.
   
-2. **Declara la cola**: Se declara una cola llamada `simple_queue` con las siguientes características:
+2. **Declara la cola**: Se declara una cola llamada `publish_subscribe_queue` con las siguientes características:
    - **Durable**: `false` (no sobrevivirá a reinicios).
    - **Exclusive**: `false` (puede ser usada por otras conexiones).
    - **AutoDelete**: `false` (no se eliminará automáticamente).
@@ -24,11 +24,11 @@ La clase `Publisher` en el proyecto `Publisher` realiza las siguientes tareas:
 
 ### Subscriber
 
-La clase `Subscriber` en el proyecto `Subscriber` realiza las siguientes tareas:
+La clase `Subscribe` en el proyecto `Subscriber` realiza las siguientes tareas:
 
 1. **Establece una conexión con RabbitMQ**: Similar al publicador, utiliza `ConnectionFactory` para conectarse al servidor RabbitMQ en `localhost`.
 
-2. **Declara la cola**: Declara la misma cola `simple_queue` con las mismas características que el publicador.
+2. **Declara la cola**: Declara la misma cola `publish_subscribe_queue` con las mismas características que el publicador.
 
 3. **Escucha mensajes**: Configura un consumidor que espera mensajes en la cola. Cuando se recibe un mensaje, se imprime en la consola con el texto `"Received: {message}"`.
 
