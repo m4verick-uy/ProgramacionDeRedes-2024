@@ -13,7 +13,7 @@ using var channel = connnection.CreateModel();
 channel.QueueDeclare(queue: "hello", // nombre de la cola
                       durable: false, // tras un reset no es necesario volver a crear la cola
                       exclusive: false, //  la cola puede ser usada por cualquier conexión
-                      autoDelete: true, // la cola no debe ser eliminada cuando no se use
+                      autoDelete: false, // la cola no debe ser eliminada cuando no se use
                       arguments: null); // sirven para configuraciones adicionales
 
 

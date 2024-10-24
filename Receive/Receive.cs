@@ -9,9 +9,6 @@ var factory = new ConnectionFactory { HostName = "localhost"};
 using var connnection = factory.CreateConnection(); // creamos una conexion
 using var channel = connnection.CreateModel(); // creamos un canal para definir la cola de mensajes
 
-// Delete the existing queue
-channel.QueueDelete(queue: "hello");
-
 channel.QueueDeclare(queue: "hello", durable: false, exclusive: false, autoDelete: false, arguments: null);
 
 Console.WriteLine("[*] Waiting for menssages.");
@@ -20,9 +17,9 @@ var consumer = new EventingBasicConsumer(channel);
 
 consumer.Received += (model, ea) => //es el proceso de desencolar el mensaje 
 {
-    var body = ea.Body.ToArray();
+    var body = ea.Body.ToArray(); // es una convención de nombres en ingles ea = event args / argumentos del evento recibidos.
     var message = Encoding.UTF8.GetString(body); // el mensaje lo traducimos de bytes a string para mostrar
-    Console.WriteLine($"[x] Received {message}"); // mostrmos el mensaje recibido
+    Console.WriteLine($"[x] Message received: {message}"); // mostrmos el mensaje recibido
 };
 
 channel.BasicConsume(queue: "hello", autoAck: true, consumer: consumer);
