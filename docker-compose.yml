@@ -1,0 +1,13 @@
+
+services:
+  servidor:
+    build:
+      context: ./Server
+    network_mode: host
+    tty: true
+
+  cliente:
+    build:
+      context: ./Client
+    network_mode: host
+    tty: true
