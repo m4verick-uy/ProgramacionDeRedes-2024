@@ -12,9 +12,11 @@ namespace Servidor
 
             //creo el socket
             var socketServer = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            var localEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 10000);
+            //var localEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 10000);
             // creo el endpoint con IP y puerto  (Estos son conocidos)
-
+            
+            // lleva any para que pueda tomar cualquier IP asignada en este caso por la inyeccion del DNS de docker
+            var localEndPoint = new IPEndPoint(IPAddress.Any, 10000);
             socketServer.Bind(localEndPoint);  // Vinculamos el Socket y el endpoint
 
             socketServer.Listen(10);  // Ponemos el socket en modo escucha
@@ -27,13 +29,8 @@ namespace Servidor
 
                 new Thread(() => HandleClient(socketClient)).Start();
                 // Lanzo un hilo por cada cliente
-
-
-
             }
-
             //Console.ReadLine();
-
         }
 
         static void HandleClient(Socket socketCliente)
@@ -46,7 +43,6 @@ namespace Servidor
                 socketCliente.Receive(data);
                 string mensaje = Encoding.UTF8.GetString(data);
                 Console.WriteLine(mensaje);
-
             }
             Console.WriteLine("Cliente desconectado");
 

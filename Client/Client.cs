@@ -12,14 +12,17 @@ namespace Cliente
 
             var socketCliente = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
-            var localEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 0); // Puerto 0 toma el primero disponible
+            //var localEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 0); // Puerto 0 toma el primero disponible
+            var localEndPoint = new IPEndPoint(IPAddress.Any, 0); 
             socketCliente.Bind(localEndPoint);
 
             // El endpoint del servidor
-            var remoteEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 10000);
+            //var remoteEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 10000);
 
-            socketCliente.Connect(remoteEndPoint); // Nos conectamos al servidor
+            //socketCliente.Connect(remoteEndPoint); // Nos conectamos al servidor
 
+            socketCliente.Connect("server-container", 10000);
+            
             Console.WriteLine("Me conecté al servidor!!!! ");
 
             Console.WriteLine("Escriba un mensaje y presione enter");
