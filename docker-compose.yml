@@ -1,13 +1,26 @@
+version: '3.9'
 
 services:
   servidor:
     build:
       context: ./Server
-    network_mode: host
+    image: server-image
+    container_name: server-container
+    networks:
+      - red-local-2025
     tty: true
+    stdin_open: true  
 
   cliente:
     build:
       context: ./Client
-    network_mode: host
+    image: client-image
+    container_name: client-container
+    networks:
+      - red-local-2025
     tty: true
+    stdin_open: true
+
+networks:
+  red-local-2025:
+    driver: bridge

@@ -29,12 +29,20 @@ namespace Cliente
             while (true)
             {
                 string mensaje = Console.ReadLine();
+                if (mensaje == "exit")
+                {
+                    break;
+                }
+                if (mensaje == null)
+                {
+                    break;
+                }
                 byte[] data = Encoding.UTF8.GetBytes(mensaje);
                 socketCliente.Send(data);
             }
 
             Console.WriteLine("Cerrando la conexion");
-
+            
             socketCliente.Shutdown(SocketShutdown.Both);
             socketCliente.Close();
 
