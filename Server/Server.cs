@@ -1,51 +1,34 @@
 ﻿using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Configuration;
 
-namespace Servidor
+Console.WriteLine("Iniciando app Servidor.....");
+
+string ipStr = ConfigurationManager.AppSettings["ServerIP"] ?? "0.0.0.0";
+string portStr = ConfigurationManager.AppSettings["ServerPort"] ?? "10000";
+
+var ip = IPAddress.Parse(ipStr);
+var port = int.Parse(portStr);
+
+var socketServidor = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+socketServidor.Bind(new IPEndPoint(ip, port));
+socketServidor.Listen(10);
+
+Console.WriteLine($"Servidor escuchando en {ip}:{port}");
+
+while (true)
 {
-    public class Server
+    var socketCliente = await socketServidor.AcceptAsync();
+    _ = Task.Run(async () =>
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Iniciando app Servidor.....");
+        Console.WriteLine("Cliente conectado");
+        var buffer = new byte[1024];
+        int cantidad = await socketCliente.ReceiveAsync(buffer, SocketFlags.None);
+        var mensaje = Encoding.UTF8.GetString(buffer, 0, cantidad);
+        Console.WriteLine($"Recibido: {mensaje}");
 
-            //creo el socket
-            var socketServer = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            //var localEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 10000);
-            // creo el endpoint con IP y puerto  (Estos son conocidos)
-            
-            // lleva any para que pueda tomar cualquier IP asignada en este caso por la inyeccion del DNS de docker
-            var localEndPoint = new IPEndPoint(IPAddress.Any, 10000);
-            socketServer.Bind(localEndPoint);  // Vinculamos el Socket y el endpoint
-
-            socketServer.Listen(10);  // Ponemos el socket en modo escucha
-            bool salir = false;
-            while (!salir)
-            {
-
-                var socketClient = socketServer.Accept(); // BLOQUEANTE
-                Console.WriteLine("Acepte un cliente");
-
-                new Thread(() => HandleClient(socketClient)).Start();
-                // Lanzo un hilo por cada cliente
-            }
-            //Console.ReadLine();
-        }
-
-        static void HandleClient(Socket socketCliente)
-        {
-            Console.WriteLine("Atendiendo a un cliente");
-            bool isConected = true;
-            while (isConected)
-            {
-                byte[] data = new byte[1024];
-                socketCliente.Receive(data);
-                string mensaje = Encoding.UTF8.GetString(data);
-                Console.WriteLine(mensaje);
-            }
-            Console.WriteLine("Cliente desconectado");
-
-        }
-    }
+        socketCliente.Shutdown(SocketShutdown.Both);
+        socketCliente.Close();
+    });
 }

@@ -1,51 +1,46 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Configuration;
+using System.Threading.Tasks;
 
 namespace Cliente
 {
-    public class Client
+    public class Program
     {
-        static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             Console.WriteLine("Iniciando app Cliente...!");
 
+            string ipServer = ConfigurationManager.AppSettings["ServerIP"] ?? "127.0.0.1";
+            int port = int.Parse(ConfigurationManager.AppSettings["ServerPort"] ?? "10000");
+
             var socketCliente = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            socketCliente.Bind(new IPEndPoint(IPAddress.Any, 0));
 
-            //var localEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 0); // Puerto 0 toma el primero disponible
-            var localEndPoint = new IPEndPoint(IPAddress.Any, 0); 
-            socketCliente.Bind(localEndPoint);
+            await socketCliente.ConnectAsync(ipServer, port);
+            Console.WriteLine($"Conectado al servidor {ipServer}:{port}");
 
-            // El endpoint del servidor
-            //var remoteEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 10000);
-
-            //socketCliente.Connect(remoteEndPoint); // Nos conectamos al servidor
-
-            socketCliente.Connect("server-container", 10000);
-            
-            Console.WriteLine("Me conecté al servidor!!!! ");
-
-            Console.WriteLine("Escriba un mensaje y presione enter");
-            while (true)
+            // Lógica de envío dentro de una tarea
+            var tareaEnvio = Task.Run(async () =>
             {
-                string mensaje = Console.ReadLine();
-                if (mensaje == "exit")
+                while (true)
                 {
-                    break;
-                }
-                if (mensaje == null)
-                {
-                    break;
-                }
-                byte[] data = Encoding.UTF8.GetBytes(mensaje);
-                socketCliente.Send(data);
-            }
+                    Console.Write("Mensaje: ");
+                    string mensaje = Console.ReadLine();
+                    if (mensaje?.Trim().ToLower() == "salir") break;
 
-            Console.WriteLine("Cerrando la conexion");
-            
-            socketCliente.Shutdown(SocketShutdown.Both);
-            socketCliente.Close();
+                    byte[] data = Encoding.UTF8.GetBytes(mensaje);
+                    await socketCliente.SendAsync(data, SocketFlags.None);
+                }
 
+                Console.WriteLine("Cerrando conexión.");
+                socketCliente.Shutdown(SocketShutdown.Both);
+                socketCliente.Close();
+            });
+
+            await tareaEnvio;
         }
     }
 }
