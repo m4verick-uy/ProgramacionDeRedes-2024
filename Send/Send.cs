@@ -7,10 +7,10 @@ using var channel = connection.CreateModel();
 
 channel.QueueDeclare(  //metodo para declarar una cola
     queue: "hello",    //especifico el nombre de la cola
-    durable: false,    //no quiero que sobrevia a un reinicio del servidor 
+    durable: false,    //no sobrevive a un reinicio del servidor, la cola se destruye 
     exclusive: false,  //no quiero que solo un consumidor pueda conectarse a la cola
-    autoDelete: false, //no quiero que se elimine la cola cuando no haya consumidores
-    arguments: null);  //no quiero pasar argumentos adicionales
+    autoDelete: false, //no se elimina la cola cuando no haya consumidores
+    arguments: null);  //para no pasar argumentos adicionales
 
 bool salir = false;
 while (!salir)
