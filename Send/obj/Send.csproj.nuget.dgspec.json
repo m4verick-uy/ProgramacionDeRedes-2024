@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Send/Send.csproj": {}
+    "/Users/m4verick/Desktop/SendAndReceive/ProgramacionDeRedes-2024/Send/Send.csproj": {}
   },
   "projects": {
-    "/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Send/Send.csproj": {
+    "/Users/m4verick/Desktop/SendAndReceive/ProgramacionDeRedes-2024/Send/Send.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Send/Send.csproj",
+        "projectUniqueName": "/Users/m4verick/Desktop/SendAndReceive/ProgramacionDeRedes-2024/Send/Send.csproj",
         "projectName": "Send",
-        "projectPath": "/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Send/Send.csproj",
-        "packagesPath": "/home/m4verick/.nuget/packages/",
-        "outputPath": "/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Send/obj/",
+        "projectPath": "/Users/m4verick/Desktop/SendAndReceive/ProgramacionDeRedes-2024/Send/Send.csproj",
+        "packagesPath": "/Users/m4verick/.nuget/packages/",
+        "outputPath": "/Users/m4verick/Desktop/SendAndReceive/ProgramacionDeRedes-2024/Send/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/m4verick/.nuget/NuGet/NuGet.Config"
+          "/Users/m4verick/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.409/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
