@@ -24,11 +24,28 @@ while (true)
     {
         Console.WriteLine("Cliente conectado");
         var buffer = new byte[1024];
-        int cantidad = await socketCliente.ReceiveAsync(buffer, SocketFlags.None);
-        var mensaje = Encoding.UTF8.GetString(buffer, 0, cantidad);
-        Console.WriteLine($"Recibido: {mensaje}");
+        
+        while (true)
+        {
+            int cantidad;
+            try
+            {
+                cantidad = await socketCliente.ReceiveAsync(buffer, SocketFlags.None);
+            }
+            catch
+            {
+                break; // si hay error en la recepción, se sale del while
+            }
+
+            if (cantidad == 0)
+                break; // el cliente cerró la conexión
+
+            var mensaje = Encoding.UTF8.GetString(buffer, 0, cantidad);
+            Console.WriteLine($"Recibido: {mensaje}");
+        }
 
         socketCliente.Shutdown(SocketShutdown.Both);
         socketCliente.Close();
+        Console.WriteLine("Cliente desconectado");
     });
 }
