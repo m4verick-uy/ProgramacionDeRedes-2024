@@ -1,50 +1,121 @@
-# RabbitMQ Example
+# Ejemplo de RabbitMQ Publish/Subscribe - DirecTV IPTV Simulation
 
-Este proyecto demuestra el uso básico de RabbitMQ en .NET 8, utilizando dos aplicaciones de consola: un publicador (`Publisher`) y un suscriptor (`Subscriber`).
+Este proyecto simula una señal de cable tipo DirecTV utilizando **RabbitMQ** con el patrón **Publish/Subscribe**. Se implementa en .NET 8 con C# moderno (async/await) y estructura legada (`namespace`, `class`, `Main()`), ideal para uso pedagógico.
 
-## Estructura del Proyecto
+## Objetivo
 
-- **Publisher**: Este proyecto se encarga de enviar mensajes a una cola de RabbitMQ.
-- **Subscriber**: Este proyecto escucha y recibe mensajes de la misma cola.
+Demostrar cómo RabbitMQ permite publicar mensajes en diferentes "canales" (intereses) y cómo múltiples consumidores pueden suscribirse solo al canal que les interesa, usando **exchange tipo `direct`** y **`routingKey`**.
 
-## Descripción del Código
+---
 
-### Publisher
+## Estructura
 
-La clase `Publish` en el proyecto `Publisher` realiza las siguientes tareas:
+```
+Publish-Subscribe/
+├── DirectvPublisher/       # Publicador: envía la grilla de canales
+│   └── DirectvPublisher.cs
+├── DirectvSubscriber/      # Subscriptor: elige a qué canal conectarse
+│   └── DirectvSubscriber.cs
+└── README.md
+```
 
-1. **Establece una conexión con RabbitMQ**: Utiliza `ConnectionFactory` para conectarse al servidor RabbitMQ que está en ejecución en `localhost`.
-  
-2. **Declara la cola**: Se declara una cola llamada `publish_subscribe_queue` con las siguientes características:
-   - **Durable**: `false` (no sobrevivirá a reinicios).
-   - **Exclusive**: `false` (puede ser usada por otras conexiones).
-   - **AutoDelete**: `false` (no se eliminará automáticamente).
-  
-3. **Envía mensajes**: Envía 5 mensajes a la cola, cada uno con el texto `"Hello World {i}"`, donde `{i}` es un número del 0 al 4. Después de enviar cada mensaje, espera 1 segundo.
+---
 
-### Subscriber
+## Ejecución
 
-La clase `Subscribe` en el proyecto `Subscriber` realiza las siguientes tareas:
+### 1. Asegurar que RabbitMQ esté corriendo
 
-1. **Establece una conexión con RabbitMQ**: Similar al publicador, utiliza `ConnectionFactory` para conectarse al servidor RabbitMQ en `localhost`.
+Ejemplo en Docker:
 
-2. **Declara la cola**: Declara la misma cola `publish_subscribe_queue` con las mismas características que el publicador.
+```bash
+docker start rabbitmq
+# o si usan docker-compose
+docker-compose up -d
+```
 
-3. **Escucha mensajes**: Configura un consumidor que espera mensajes en la cola. Cuando se recibe un mensaje, se imprime en la consola con el texto `"Received: {message}"`.
+---
 
-## Diagrama de Flujo
+### 2. Ejecutar el Subscriber
 
-```plaintext
- +---------------------+      +---------------------+
- |                     |      |                     |
- |     Publisher       |      |     Subscriber      |
- |                     |      |                     |
- +---------------------+      +---------------------+
-            |                          |
-            |   1. Enviar mensaje      |
-            | ------------------------>|
-            |                          |
-            |                          | 2. Recibir mensaje
-            |                          |<-------------------------
-            |                          |
+```bash
+dotnet run --project DirectvSubscriber
+```
 
+Verás:
+
+```
+Bienvenido a DirecTV - Elija tu canal IPTV:
+1 - Noticias
+2 - Deportes
+3 - Dibujos Animados
+Canal:
+```
+
+Seleccioná un canal y el subscriber se suscribirá a la cola correspondiente (`noticias`, `deportes` o `dibujos`).
+
+---
+
+### 3. Ejecutar el Publisher
+
+```bash
+dotnet run --project DirectvPublisher
+```
+
+Esto enviará 6 mensajes por canal con una pequeña demora entre ellos, simulando una transmisión "en vivo". Cada subscriptor recibirá únicamente los mensajes de su canal.
+
+---
+
+## Tecnologías usadas
+
+- .NET 8
+- RabbitMQ.Client 7.1.2
+- Exchange tipo `direct`
+- Routing Keys para segmentar audiencia (`noticias`, `deportes`, `dibujos`)
+- Async/await + `AsyncEventingBasicConsumer`
+
+---
+
+## Contenido de los Canales
+
+### Canal Noticias
+
+- Bienvenido al canal NOTICIAS
+- Científicos crean plástico biodegradable en 72h
+- NASA limpia basura espacial con láseres
+- Estudiantes uruguayos ganan mundial de robótica
+- Bosques del Amazonas muestran recuperación
+- Avance en vacuna contra Alzheimer
+
+### Canal Deportes
+
+- Bienvenido al canal DEPORTES
+- Uruguay vs Francia
+- Uruguay vs México
+- Uruguay vs Ghana (penales)
+- Semifinal: Uruguay vs Alemania
+- Final: Uruguay vs España
+
+### Canal Dibujos Animados
+
+- Bienvenido al canal DIBUJOS ANIMADOS
+- ThunderCats
+- Osos Gummy
+- Star Wars Lego
+- Astroboy
+- Street Fighter
+
+---
+
+## Posibles mejoras
+
+- Permitir suscribirse a más de un canal a la vez.
+- Usar `fanout` en vez de `direct` para broadcasting general.
+- Visualizar en consola las colas desde la interfaz web de RabbitMQ.
+
+---
+
+## Autor
+
+Ejemplo desarrollado para fines didácticos por **Guillermo Echichure** como parte del curso de **Programación de Redes con .NET y RabbitMQ**.
+
+---
