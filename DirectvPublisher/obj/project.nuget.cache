@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "0f5x5eKw1TU=",
+  "success": true,
+  "projectFilePath": "/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/DirectvPublisher/DirectvPublisher.csproj",
+  "expectedPackageFiles": [
+    "/home/m4verick/.nuget/packages/rabbitmq.client/7.1.2/rabbitmq.client.7.1.2.nupkg.sha512",
+    "/home/m4verick/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
+    "/home/m4verick/.nuget/packages/system.threading.ratelimiting/8.0.0/system.threading.ratelimiting.8.0.0.nupkg.sha512",
+    "/home/m4verick/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/home/m4verick/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "/home/m4verick/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.11/microsoft.netcore.app.host.linux-x64.8.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}
