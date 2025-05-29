@@ -4,6 +4,8 @@
 /home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Publisher/bin/Debug/net8.0/Publisher.dll
 /home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Publisher/bin/Debug/net8.0/Publisher.pdb
 /home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Publisher/bin/Debug/net8.0/RabbitMQ.Client.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Publisher/bin/Debug/net8.0/System.IO.Pipelines.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Publisher/bin/Debug/net8.0/System.Threading.RateLimiting.dll
 /home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Publisher/obj/Debug/net8.0/Publisher.csproj.AssemblyReference.cache
 /home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Publisher/obj/Debug/net8.0/Publisher.GeneratedMSBuildEditorConfig.editorconfig
 /home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Publisher/obj/Debug/net8.0/Publisher.AssemblyInfoInputs.cache

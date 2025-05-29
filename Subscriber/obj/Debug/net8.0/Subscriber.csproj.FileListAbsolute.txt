@@ -4,6 +4,8 @@
 /home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Subscriber/bin/Debug/net8.0/Subscriber.dll
 /home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Subscriber/bin/Debug/net8.0/Subscriber.pdb
 /home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Subscriber/bin/Debug/net8.0/RabbitMQ.Client.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Subscriber/bin/Debug/net8.0/System.IO.Pipelines.dll
+/home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Subscriber/bin/Debug/net8.0/System.Threading.RateLimiting.dll
 /home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Subscriber/obj/Debug/net8.0/Subscriber.csproj.AssemblyReference.cache
 /home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Subscriber/obj/Debug/net8.0/Subscriber.GeneratedMSBuildEditorConfig.editorconfig
 /home/m4verick/RiderProjects/ProgramacionDeRedes-2024/Subscriber/obj/Debug/net8.0/Subscriber.AssemblyInfoInputs.cache
