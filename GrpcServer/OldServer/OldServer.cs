@@ -1,20 +1,17 @@
-﻿using System;
-using System.Net;
+﻿using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Configuration;
-using System.Threading.Tasks;
 
-namespace Servidor
+namespace GrpcServer.OldServer
 {
-    public class Program
+    public class OldServer
     {
-        public static async Task Main(string[] args)
+        public static async Task StartOldServer()
         {
             Console.WriteLine("Iniciando app Servidor.....");
 
-            string ipStr = ConfigurationManager.AppSettings["ServerIP"] ?? "0.0.0.0";
-            string portStr = ConfigurationManager.AppSettings["ServerPort"] ?? "10000";
+            string ipStr = System.Configuration.ConfigurationManager.AppSettings["ServerIP"] ?? "0.0.0.0";
+            string portStr = System.Configuration.ConfigurationManager.AppSettings["ServerPort"] ?? "10000";
 
             var ip = IPAddress.Parse(ipStr);
             var port = int.Parse(portStr);
