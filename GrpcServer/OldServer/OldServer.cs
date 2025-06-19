@@ -10,8 +10,8 @@ namespace GrpcServer.OldServer
         {
             Console.WriteLine("Iniciando app Servidor.....");
 
-            string ipStr = System.Configuration.ConfigurationManager.AppSettings["ServerIP"] ?? "0.0.0.0";
-            string portStr = System.Configuration.ConfigurationManager.AppSettings["ServerPort"] ?? "10000";
+            var ipStr = System.Configuration.ConfigurationManager.AppSettings["ServerIP"] ?? "0.0.0.0";
+            var portStr = System.Configuration.ConfigurationManager.AppSettings["ServerPort"] ?? "10000";
 
             var ip = IPAddress.Parse(ipStr);
             var port = int.Parse(portStr);
@@ -25,7 +25,7 @@ namespace GrpcServer.OldServer
             while (true)
             {
                 var socketCliente = await socketServidor.AcceptAsync();
-                Console.WriteLine("Cliente conectado");
+                Console.WriteLine("Client connected");
 
                 _ = Task.Run(async () =>
                 {

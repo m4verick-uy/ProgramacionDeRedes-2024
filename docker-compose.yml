@@ -4,6 +4,7 @@ services:
   grpc-server:
     build:
       context: ./GrpcServer
+    platform: linux/amd64      # Forzar arquitectura compatible con protoc
     image: grpc-server-image
     container_name: grpc-server-container
     networks:
@@ -13,7 +14,21 @@ services:
     ports:
       - "5001:5001"     # Puerto gRPC
       - "10000:10000"   # Puerto TCP del servidor embebido
-
+    volumes:
+      - ./GrpcServer/OldServer/images:/app/images   # ⬅ Mapeo volumen persistente
+  
+  rabbitmq:
+    image: rabbitmq:4-management
+    container_name: rabbitmq-container
+    ports:
+      - "5672:5672"    # Broker AMQP
+      - "15672:15672"   # UI de administración
+    networks:
+      - red-local-2025
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+      
 networks:
   red-local-2025:
     driver: bridge
