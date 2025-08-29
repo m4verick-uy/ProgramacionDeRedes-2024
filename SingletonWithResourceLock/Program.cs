@@ -1,5 +1,5 @@
 ﻿
-namespace SingletonSinLock
+namespace SingletonWithResourceLock
 {
     using System;
     using System.Threading;
@@ -23,17 +23,29 @@ namespace SingletonSinLock
 
         private DbContext() { }
 
-        // ESTADO COMPARTIDO MUTABLE
-        private int _totalWrites; // cambia con cada guardado
+        // ESTADO COMPARTIDO MUTABLE protegido
+        private readonly object zonaCritica = new object();
+        private int _totalWrites;
 
         public void SaveDataToDatabase(string data)
         {
             Console.WriteLine("Guardando datos: " + data);
-            // Riesgo: ++ no es atómico a nivel lógico (read-modify-write)
-            _totalWrites++;
+            lock (zonaCritica)
+            {
+                _totalWrites++; // ahora la actualización es excluyente
+            }
         }
 
-        public int TotalWrites => _totalWrites; // lectura sin protección (también riesgosa)
+        public int TotalWrites
+        {
+            get
+            {
+                lock (zonaCritica)
+                {
+                    return _totalWrites; // lectura consistente
+                }
+            }
+        }
     }
 
     class Program
@@ -49,7 +61,7 @@ namespace SingletonSinLock
             t1.Start(); t2.Start(); t3.Start();
             t1.Join(); t2.Join(); t3.Join();
 
-            Console.WriteLine($"TotalWrites reportado: {db.TotalWrites} (podría no coincidir con el esperado)");
+            Console.WriteLine($"TotalWrites reportado: {db.TotalWrites} (debería ser 30000)");
         }
 
         static void Ejecutar(DbContext db, string dato)

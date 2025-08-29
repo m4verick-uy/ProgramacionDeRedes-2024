@@ -1,5 +1,5 @@
-﻿
-namespace SingletonSinLock
+﻿// DemoA_Singleton_NoLock/Program.cs
+namespace DemoA_Singleton_NoLock
 {
     using System;
     using System.Threading;

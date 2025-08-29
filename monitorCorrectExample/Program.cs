@@ -1,4 +1,7 @@
-﻿using System;
+﻿
+//Ejemplo con try-catch-finally en el mismo metodo
+
+using System;
 using System.Threading;
 
 class DbContext
@@ -7,7 +10,8 @@ class DbContext
 
     public void SaveDataToDatabase(string data)
     {
-        Monitor.Enter(lockObject);
+        Monitor.Enter(lockObject); // Se adquiere el bloqueo
+
         try
         {
             // Simulamos la operación de guardar datos en la base de datos
@@ -19,9 +23,15 @@ class DbContext
                 throw new Exception("Error al guardar datos");
             }
         }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Excepción capturada: " + ex.Message);
+        }
         finally
         {
-            Monitor.Exit(lockObject); // Asegura que el bloqueo se libere incluso si ocurre una excepción
+            // Si ocurre una excepción, el siguiente código no se ejecuta, y el bloqueo no se libera
+            Monitor.Exit(lockObject);
+
         }
     }
 }
@@ -30,43 +40,12 @@ class Program
 {
     static void Main()
     {
+
         DbContext dbContext = new DbContext();
 
-        Thread t1 = new Thread(() =>
-        {
-            try
-            {
-                dbContext.SaveDataToDatabase("Dato1");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Excepción capturada en t1: {ex.Message}");
-            }
-        });
-
-        Thread t2 = new Thread(() =>
-        {
-            try
-            {
-                dbContext.SaveDataToDatabase("Dato2");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Excepción capturada en t2: {ex.Message}");
-            }
-        });
-
-        Thread t3 = new Thread(() =>
-        {
-            try
-            {
-                dbContext.SaveDataToDatabase("error");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Excepción capturada en t3: {ex.Message}");
-            }
-        });
+        Thread t1 = new Thread(() => dbContext.SaveDataToDatabase("Dato1"));
+        Thread t2 = new Thread(() => dbContext.SaveDataToDatabase("Dato2"));
+        Thread t3 = new Thread(() => dbContext.SaveDataToDatabase("error"));
 
         t1.Start();
         t2.Start();
@@ -77,5 +56,6 @@ class Program
         t3.Join();
 
         Console.WriteLine("Operación completada");
+        Console.WriteLine("continuo trabajando");
     }
 }
