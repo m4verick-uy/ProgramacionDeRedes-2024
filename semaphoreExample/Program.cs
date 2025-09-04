@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading;
-
-class Program
+﻿class Program
 {
     // Creamos un Semaphore que permite un máximo de 3 hilos en la sección crítica a la vez.
     private static Semaphore semaphore = new Semaphore(3, 3);
@@ -11,6 +8,7 @@ class Program
         // Creamos y lanzamos 10 hilos que intentarán acceder a la sección crítica.
         for (int i = 1; i <= 10; i++)
         {
+
             Thread thread = new Thread(AccessResource);
             thread.Name = $"Hilo {i}";
             thread.Start();
