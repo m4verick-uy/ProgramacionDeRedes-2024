@@ -15,7 +15,7 @@ class Program
     }
     static void DoWork()
     {
-        Console.WriteLine("Thread is running with delegado ThreadStart");
+        Console.WriteLine("Hilo corriendo con delegado ThreadStart");
         for (int i = 0; i <= 10; i++)
         {
             Console.WriteLine(i);
@@ -100,7 +100,7 @@ class Program
     
     static void DoWork(Object data)
     {
-        Console.WriteLine("Thread is running with delegado pamametrizable ThreadStart");
+        Console.WriteLine("Hilo corriendo con delegado pamametrizable ThreadStart");
         for (var i = 0; i <= (int)data; i++)
         {
             Console.WriteLine(i);
