@@ -34,6 +34,15 @@ project.nuget.dgspec.json
 *.sln.docstates
 .vscode/
 
+# Ignore Visual Studio files
+.vs/
+
+# Ignore macOS files
+.DS_Store
+
+# Ignore Claude Code local config
+.claude/
+
 # Ignore build outputs
 *.dll
 *.exe
