@@ -2,13 +2,13 @@
 
 using System.Threading;
 
-class PriorityTest
+class Program
 {
 
     // Dos hilos haciendo el mismo tipo de trabajo (contar).
     // - El hilo FOREGROUND cuenta rápido y termina pronto.
     // - El hilo BACKGROUND cuenta lento y necesitaría más tiempo.
-    
+
     static void Main(string[] args)
     {
         // Hilo foreground (por defecto): cuenta 5 veces, cada 300 ms.
