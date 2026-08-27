@@ -9,10 +9,11 @@ class DbContext
     {
         lock (lockObject)
         {
-            // Simulamos la operación de guardar 
+            // Simulamos la operación de guardar
             Console.WriteLine("Guardando datos: " + data);
 
-            // Aquí podría ocurrir una excepción, por ejemplo, si hay un problema en la operación de escritura
+            // La excepción NACE acá, en lo más profundo de la pila del hilo.
+            // Desde acá empieza a subir buscando un catch en la misma pila.
             if (data.Contains("error"))
             {
                 throw new Exception("Error al guardar datos");
@@ -55,6 +56,8 @@ class Program
         {
             try
             {
+                // La lambda llama a SaveDataToDatabase, que lanzará la excepción.
+                // Esta sube desde SaveDataToDatabase hasta este catch, todo dentro de t3.
                 dbContext.SaveDataToDatabase("error");
             }
             catch (Exception ex)

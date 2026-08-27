@@ -26,8 +26,8 @@
             var db = new DbContext();
 
             var t1 = new Thread(() => Ejecutar(db, "Dato1"));
-            var t2 = new Thread(() => Ejecutar(db, "Dato2"));
-            var t3 = new Thread(() => Ejecutar(db, "error")); // habrá excepción, pero no se bloquea la zona crítica
+            var t2 = new Thread(() => Ejecutar(db, "error"));
+            var t3 = new Thread(() => Ejecutar(db, "Dato2")); // habrá excepción, pero no se bloquea la zona crítica
 
             t1.Start(); t2.Start(); t3.Start();
             t1.Join(); t2.Join(); t3.Join();
@@ -47,5 +47,4 @@
             }
         }
     }
-
 }
