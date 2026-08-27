@@ -29,13 +29,14 @@ namespace SingletonWithResourceLock
 
         public void SaveDataToDatabase(string data)
         {
-            Console.WriteLine("Guardando datos: " + data);
-            lock (zonaCritica)
+          //  Console.WriteLine("Guardando datos: " + data);
+
+            // comentar y ver resultado
+            //lock (zonaCritica)
             {
                 _totalWrites++; // ahora la actualización es excluyente
             }
         }
-
         public int TotalWrites
         {
             get
