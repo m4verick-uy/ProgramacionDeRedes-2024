@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonWithResourceLock",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaitPulsePanaderia", "WaitPulsePanaderia\WaitPulsePanaderia.csproj", "{945D05CA-8F03-4249-9A63-193433D27A8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemaphoreExample", "SemaphoreExample\SemaphoreExample.csproj", "{1F565992-721F-4BEF-A5E3-14A4BD259DFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +115,18 @@ Global
 		{945D05CA-8F03-4249-9A63-193433D27A8F}.Release|x64.Build.0 = Release|Any CPU
 		{945D05CA-8F03-4249-9A63-193433D27A8F}.Release|x86.ActiveCfg = Release|Any CPU
 		{945D05CA-8F03-4249-9A63-193433D27A8F}.Release|x86.Build.0 = Release|Any CPU
+		{1F565992-721F-4BEF-A5E3-14A4BD259DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F565992-721F-4BEF-A5E3-14A4BD259DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F565992-721F-4BEF-A5E3-14A4BD259DFE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1F565992-721F-4BEF-A5E3-14A4BD259DFE}.Debug|x64.Build.0 = Debug|Any CPU
+		{1F565992-721F-4BEF-A5E3-14A4BD259DFE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1F565992-721F-4BEF-A5E3-14A4BD259DFE}.Debug|x86.Build.0 = Debug|Any CPU
+		{1F565992-721F-4BEF-A5E3-14A4BD259DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F565992-721F-4BEF-A5E3-14A4BD259DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F565992-721F-4BEF-A5E3-14A4BD259DFE}.Release|x64.ActiveCfg = Release|Any CPU
+		{1F565992-721F-4BEF-A5E3-14A4BD259DFE}.Release|x64.Build.0 = Release|Any CPU
+		{1F565992-721F-4BEF-A5E3-14A4BD259DFE}.Release|x86.ActiveCfg = Release|Any CPU
+		{1F565992-721F-4BEF-A5E3-14A4BD259DFE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
