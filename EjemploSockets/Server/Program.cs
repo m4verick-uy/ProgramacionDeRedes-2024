@@ -4,20 +4,51 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
-
 class Program
 {
-
     static void HandleClient(Socket socketClient)
     {
         bool ClientConnected = true;
 
         while (ClientConnected)
         {
-            byte[] data = new byte[256];
-            socketClient.Receive(data);
-            string message = Encoding.UTF8.GetString(data);
-            Console.WriteLine("El cliente dice: " + message);
+            try
+            {
+                // ===== CASO 1 - SIN CONTROL DE LARGO (buffer fijo) =====
+                //byte[] data = new byte[256];
+                //int byteRecibidos = socketClient.Receive(data);
+
+                // ===== CASO 2 - LARGO COMO TEXTO ("0007") =====
+                // byte[] header = new byte[4];
+                // socketClient.Receive(header);
+                // int largo = int.Parse(Encoding.UTF8.GetString(header));
+                //
+                // byte[] data = new byte[largo];
+                // int byteRecibidos = socketClient.Receive(data);
+
+                // ===== CASO 3 - LARGO COMO ENTERO (Int32 binario) =====
+                byte[] header = new byte[4];
+                socketClient.Receive(header);
+                int largo = BitConverter.ToInt32(header, 0);
+                
+                byte[] data = new byte[largo];
+                int byteRecibidos = socketClient.Receive(data);
+
+                // ----- común a CASO 2 y 3 -----
+                if (byteRecibidos == 0)
+                {
+                    ClientConnected = false; // el cliente cerró la conexión
+                }
+                else
+                {
+                    string mensaje = Encoding.UTF8.GetString(data);
+                    Console.WriteLine("El cliente dice: " + mensaje);
+                }
+            }
+            catch (SocketException)
+            {
+                ClientConnected = false; // corte abrupto
+            }
         }
         Console.WriteLine("Cliente desconectado");
     }
@@ -40,8 +71,7 @@ class Program
         socketServer.Listen(3);
         
         // configuramos que el servidor acepte conexiones
-
-
+        
 
         while (true)
         {
@@ -50,7 +80,6 @@ class Program
             
             new Thread(()=> HandleClient(socketClient)).Start();
         }
-        
         
         
         Console.ReadLine();
