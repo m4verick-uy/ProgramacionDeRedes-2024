@@ -1,0 +1,11 @@
+/home/m4verick/Descargas/ProtocoloComunicacion/CommonLibrary/bin/Debug/net10.0/CommonLibrary.deps.json
+/home/m4verick/Descargas/ProtocoloComunicacion/CommonLibrary/bin/Debug/net10.0/CommonLibrary.dll
+/home/m4verick/Descargas/ProtocoloComunicacion/CommonLibrary/bin/Debug/net10.0/CommonLibrary.pdb
+/home/m4verick/Descargas/ProtocoloComunicacion/CommonLibrary/obj/Debug/net10.0/CommonLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/home/m4verick/Descargas/ProtocoloComunicacion/CommonLibrary/obj/Debug/net10.0/CommonLibrary.AssemblyInfoInputs.cache
+/home/m4verick/Descargas/ProtocoloComunicacion/CommonLibrary/obj/Debug/net10.0/CommonLibrary.AssemblyInfo.cs
+/home/m4verick/Descargas/ProtocoloComunicacion/CommonLibrary/obj/Debug/net10.0/CommonLibrary.csproj.CoreCompileInputs.cache
+/home/m4verick/Descargas/ProtocoloComunicacion/CommonLibrary/obj/Debug/net10.0/CommonLibrary.dll
+/home/m4verick/Descargas/ProtocoloComunicacion/CommonLibrary/obj/Debug/net10.0/refint/CommonLibrary.dll
+/home/m4verick/Descargas/ProtocoloComunicacion/CommonLibrary/obj/Debug/net10.0/CommonLibrary.pdb
+/home/m4verick/Descargas/ProtocoloComunicacion/CommonLibrary/obj/Debug/net10.0/ref/CommonLibrary.dll

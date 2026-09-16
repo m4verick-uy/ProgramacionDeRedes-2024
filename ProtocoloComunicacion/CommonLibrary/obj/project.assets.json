@@ -1,0 +1,75 @@
+{
+  "version": 4,
+  "targets": {
+    "net10.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net10.0": []
+  },
+  "packageFolders": {
+    "/home/m4verick/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/m4verick/Descargas/ProtocoloComunicacion/CommonLibrary/CommonLibrary.csproj",
+      "projectName": "CommonLibrary",
+      "projectPath": "/home/m4verick/Descargas/ProtocoloComunicacion/CommonLibrary/CommonLibrary.csproj",
+      "packagesPath": "/home/m4verick/.nuget/packages/",
+      "outputPath": "/home/m4verick/Descargas/ProtocoloComunicacion/CommonLibrary/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/m4verick/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net10.0"
+      ],
+      "sources": {
+        "/usr/share/dotnet/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net10.0": {
+          "framework": "net10.0",
+          "targetAlias": "net10.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "10.0.400"
+    },
+    "frameworks": {
+      "net10.0": {
+        "framework": "net10.0",
+        "targetAlias": "net10.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.400/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
