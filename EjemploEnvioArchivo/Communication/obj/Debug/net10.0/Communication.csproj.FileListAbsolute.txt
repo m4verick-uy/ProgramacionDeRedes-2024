@@ -1,0 +1,12 @@
+/home/m4verick/Descargas/EjemploEnvioArchivo/Communication/bin/Debug/net10.0/Communication.deps.json
+/home/m4verick/Descargas/EjemploEnvioArchivo/Communication/bin/Debug/net10.0/Communication.dll
+/home/m4verick/Descargas/EjemploEnvioArchivo/Communication/bin/Debug/net10.0/Communication.pdb
+/home/m4verick/Descargas/EjemploEnvioArchivo/Communication/obj/Debug/net10.0/Communication.csproj.AssemblyReference.cache
+/home/m4verick/Descargas/EjemploEnvioArchivo/Communication/obj/Debug/net10.0/Communication.GeneratedMSBuildEditorConfig.editorconfig
+/home/m4verick/Descargas/EjemploEnvioArchivo/Communication/obj/Debug/net10.0/Communication.AssemblyInfoInputs.cache
+/home/m4verick/Descargas/EjemploEnvioArchivo/Communication/obj/Debug/net10.0/Communication.AssemblyInfo.cs
+/home/m4verick/Descargas/EjemploEnvioArchivo/Communication/obj/Debug/net10.0/Communication.csproj.CoreCompileInputs.cache
+/home/m4verick/Descargas/EjemploEnvioArchivo/Communication/obj/Debug/net10.0/Communication.dll
+/home/m4verick/Descargas/EjemploEnvioArchivo/Communication/obj/Debug/net10.0/refint/Communication.dll
+/home/m4verick/Descargas/EjemploEnvioArchivo/Communication/obj/Debug/net10.0/Communication.pdb
+/home/m4verick/Descargas/EjemploEnvioArchivo/Communication/obj/Debug/net10.0/ref/Communication.dll
