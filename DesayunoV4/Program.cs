@@ -11,43 +11,6 @@ class Juice { }
 
 class Program
 {
-    static async Task Main(string[] args)
-    {
-        Stopwatch reloj = Stopwatch.StartNew();
-
-        Coffee cup = PourCoffee();
-        Console.WriteLine("coffee is ready");
-
-        var eggsTask = FryEggsAsync(2);
-        var baconTask = FryBaconAsync(3);
-        var toastTask = MakeToastWithButterAndJamAsync(2);
-
-        var breakfastTasks = new List<Task> { eggsTask, baconTask, toastTask };
-        while (breakfastTasks.Count > 0)
-        {
-            Task finishedTask = await Task.WhenAny(breakfastTasks);
-            if (finishedTask == eggsTask)
-            {
-                Console.WriteLine("eggs are ready");
-            }
-            else if (finishedTask == baconTask)
-            {
-                Console.WriteLine("bacon is ready");
-            }
-            else if (finishedTask == toastTask)
-            {
-                Console.WriteLine("toast is ready");
-            }
-            breakfastTasks.Remove(finishedTask);
-        }
-
-        Juice oj = PourOJ();
-        Console.WriteLine("oj is ready");
-        Console.WriteLine("Breakfast is ready!");
-
-        Console.WriteLine("Total: {0} ms", reloj.ElapsedMilliseconds);
-    }
-
     static async Task<Toast> MakeToastWithButterAndJamAsync(int number)
     {
         Toast toast = await ToastBreadAsync(number);
@@ -61,6 +24,12 @@ class Program
     {
         Console.WriteLine("Pouring orange juice");
         return new Juice();
+    }
+    
+    static Coffee PourCoffee()
+    {
+        Console.WriteLine("Pouring coffee");
+        return new Coffee();
     }
 
     static void ApplyJam(Toast toast)
@@ -113,10 +82,41 @@ class Program
 
         return new Egg();
     }
-
-    static Coffee PourCoffee()
+    
+    static async Task Main(string[] args)
     {
-        Console.WriteLine("Pouring coffee");
-        return new Coffee();
+        Stopwatch reloj = Stopwatch.StartNew();
+
+        Coffee cup = PourCoffee();
+        Console.WriteLine("coffee is ready");
+
+        var eggsTask = FryEggsAsync(2);
+        var baconTask = FryBaconAsync(3);
+        var toastTask = MakeToastWithButterAndJamAsync(2);
+
+        var breakfastTasks = new List<Task> { eggsTask, baconTask, toastTask };
+        while (breakfastTasks.Count > 0)
+        {
+            Task finishedTask = await Task.WhenAny(breakfastTasks);
+            if (finishedTask == eggsTask)
+            {
+                Console.WriteLine("eggs are ready");
+            }
+            else if (finishedTask == baconTask)
+            {
+                Console.WriteLine("bacon is ready");
+            }
+            else if (finishedTask == toastTask)
+            {
+                Console.WriteLine("toast is ready");
+            }
+            breakfastTasks.Remove(finishedTask);
+        }
+
+        Juice oj = PourOJ();
+        Console.WriteLine("oj is ready");
+        Console.WriteLine("Breakfast is ready!");
+
+        Console.WriteLine("Total: {0} ms", reloj.ElapsedMilliseconds);
     }
 }

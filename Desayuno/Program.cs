@@ -2,43 +2,25 @@
 using System.Diagnostics;
 using System.Threading;
 
-class Coffee { }
+
 class Egg { }
 class Bacon { }
 class Toast { }
 class Juice { }
+class Coffee { }
 
 class Program
 {
-    static void Main(string[] args)
-    {
-        Stopwatch reloj = Stopwatch.StartNew();
-
-        Coffee cup = PourCoffee();
-        Console.WriteLine("coffee is ready");
-
-        Egg eggs = FryEggs(2);
-        Console.WriteLine("eggs are ready");
-
-        Bacon bacon = FryBacon(3);
-        Console.WriteLine("bacon is ready");
-
-        Toast toast = ToastBread(2);
-        ApplyButter(toast);
-        ApplyJam(toast);
-        Console.WriteLine("toast is ready");
-
-        Juice oj = PourOJ();
-        Console.WriteLine("oj is ready");
-        Console.WriteLine("Breakfast is ready!");
-
-        Console.WriteLine("Total: {0} ms", reloj.ElapsedMilliseconds);
-    }
-
     static Juice PourOJ()
     {
         Console.WriteLine("Pouring orange juice");
         return new Juice();
+    }
+    
+    static Coffee PourCoffee()
+    {
+        Console.WriteLine("Pouring coffee");
+        return new Coffee();
     }
 
     static void ApplyJam(Toast toast)
@@ -50,7 +32,7 @@ class Program
     {
         Console.WriteLine("Putting butter on the toast");
     }
-
+    
     static Toast ToastBread(int slices)
     {
         for (int slice = 0; slice < slices; slice++)
@@ -92,9 +74,32 @@ class Program
         return new Egg();
     }
 
-    static Coffee PourCoffee()
+
+    
+    static void Main(string[] args)
     {
-        Console.WriteLine("Pouring coffee");
-        return new Coffee();
+        Stopwatch reloj = Stopwatch.StartNew();
+
+        Coffee cup = PourCoffee();
+        Console.WriteLine("coffee is ready");
+
+        Egg eggs = FryEggs(2);
+        Console.WriteLine("eggs are ready");
+
+        Bacon bacon = FryBacon(3);
+        Console.WriteLine("bacon is ready");
+
+        Toast toast = ToastBread(2);
+        ApplyButter(toast);
+        ApplyJam(toast);
+        Console.WriteLine("toast is ready");
+
+        Juice oj = PourOJ();
+        Console.WriteLine("oj is ready");
+        Console.WriteLine("Breakfast is ready!");
+
+        Console.WriteLine("Total: {0} ms", reloj.ElapsedMilliseconds);
     }
+
+
 }

@@ -10,35 +10,6 @@ class Juice { }
 
 class Program
 {
-    static async Task Main(string[] args)
-    {
-        Stopwatch reloj = Stopwatch.StartNew();
-
-        Coffee cup = PourCoffee();
-        Console.WriteLine("coffee is ready");
-
-        // Arrancamos las tres tareas SIN esperarlas todavía
-        Task<Egg> eggsTask = FryEggsAsync(2);
-        Task<Bacon> baconTask = FryBaconAsync(3);
-        Task<Toast> toastTask = MakeToastWithButterAndJamAsync(2);
-
-        // Recién ahora esperamos: todas cocinan al mismo tiempo
-        Egg eggs = await eggsTask;
-        Console.WriteLine("eggs are ready");
-
-        Bacon bacon = await baconTask;
-        Console.WriteLine("bacon is ready");
-
-        Toast toast = await toastTask;
-        Console.WriteLine("toast is ready");
-
-        Juice oj = PourOJ();
-        Console.WriteLine("oj is ready");
-        Console.WriteLine("Breakfast is ready!");
-
-        Console.WriteLine("Total: {0} ms", reloj.ElapsedMilliseconds);
-    }
-
     static async Task<Toast> MakeToastWithButterAndJamAsync(int number)
     {
         Toast toast = await ToastBreadAsync(number);
@@ -52,6 +23,12 @@ class Program
     {
         Console.WriteLine("Pouring orange juice");
         return new Juice();
+    }
+    
+    static Coffee PourCoffee()
+    {
+        Console.WriteLine("Pouring coffee");
+        return new Coffee();
     }
 
     static void ApplyJam(Toast toast)
@@ -104,10 +81,33 @@ class Program
 
         return new Egg();
     }
-
-    static Coffee PourCoffee()
+    
+    static async Task Main(string[] args)
     {
-        Console.WriteLine("Pouring coffee");
-        return new Coffee();
+        Stopwatch reloj = Stopwatch.StartNew();
+
+        Coffee cup = PourCoffee();
+        Console.WriteLine("coffee is ready");
+
+        // Arrancamos las tres tareas SIN esperarlas todavía
+        Task<Egg> eggsTask = FryEggsAsync(2);
+        Task<Bacon> baconTask = FryBaconAsync(3);
+        Task<Toast> toastTask = MakeToastWithButterAndJamAsync(2);
+
+        // Recién ahora esperamos: todas cocinan al mismo tiempo
+        Egg eggs = await eggsTask;
+        Console.WriteLine("eggs are ready");
+
+        Bacon bacon = await baconTask;
+        Console.WriteLine("bacon is ready");
+
+        Toast toast = await toastTask;
+        Console.WriteLine("toast is ready");
+
+        Juice oj = PourOJ();
+        Console.WriteLine("oj is ready");
+        Console.WriteLine("Breakfast is ready!");
+
+        Console.WriteLine("Total: {0} ms", reloj.ElapsedMilliseconds);
     }
 }
