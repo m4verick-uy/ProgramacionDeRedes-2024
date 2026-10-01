@@ -1,0 +1,164 @@
+# ============================================================
+# .NET / C#
+# ============================================================
+
+# Build output
+**/bin/
+**/obj/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+
+# Generated code / test output
+Generated/
+TestResults/
+BenchmarkDotNet.Artifacts/
+
+# Code coverage
+coverage/
+coverage*.json
+*.coverage
+*.coveragexml
+
+# Logs
+*.log
+
+
+# ============================================================
+# Visual Studio
+# ============================================================
+
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+
+# ============================================================
+# JetBrains Rider / ReSharper
+# ============================================================
+
+.idea/
+
+# Rider / ReSharper user-specific settings
+*.DotSettings.user
+
+# Rider generated solution files
+*.sln.iml
+
+# JetBrains project files
+*.iws
+*.iml
+
+
+# ============================================================
+# Visual Studio Code
+# ============================================================
+
+.vscode/
+.history/
+
+
+# ============================================================
+# Windows
+# ============================================================
+
+# Windows Explorer
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+
+# Windows crash dumps
+*.dmp
+
+# Windows search / debugging
+*.stackdump
+
+
+# ============================================================
+# macOS
+# ============================================================
+
+# Finder
+.DS_Store
+
+# Apple resource forks
+._*
+
+# AppleDouble
+.AppleDouble
+
+# Finder metadata
+.LSOverride
+
+# Spotlight
+.Spotlight-V100
+
+# Trash
+.Trashes
+
+# File system events
+.fseventsd
+
+# macOS document revisions
+.DocumentRevisions-V100
+
+# Custom folder icons
+Icon?
+
+
+# ============================================================
+# Linux / Unix
+# ============================================================
+
+# Temporary / backup files
+*~
+*.tmp
+*.temp
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# Vim swap files
+[._]*.s[a-v][a-z]
+
+# Emacs
+.\#*
+\#*\#
+
+# KDE / GNOME metadata
+.directory
+
+
+# ============================================================
+# General temporary / backup files
+# ============================================================
+
+*.bak
+*.orig
+*.rej
+*.cache
+
+
+# ============================================================
+# Environment / local configuration
+# ============================================================
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Local configuration
+*.local
+
