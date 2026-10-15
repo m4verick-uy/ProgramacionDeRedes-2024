@@ -34,3 +34,12 @@
 /Users/m4verick/Desktop/SendAndReceive/ProgramacionDeRedes-2024/Receive/obj/Debug/net8.0/Receive.pdb
 /Users/m4verick/Desktop/SendAndReceive/ProgramacionDeRedes-2024/Receive/obj/Debug/net8.0/Receive.genruntimeconfig.cache
 /Users/m4verick/Desktop/SendAndReceive/ProgramacionDeRedes-2024/Receive/obj/Debug/net8.0/ref/Receive.dll
+/home/m4verick/Escritorio/Repo/ProgramacionDeRedes-2024/Receive/obj/Debug/net8.0/Receive.csproj.AssemblyReference.cache
+/home/m4verick/Escritorio/Repo/ProgramacionDeRedes-2024/Receive/obj/Debug/net8.0/Receive.GeneratedMSBuildEditorConfig.editorconfig
+/home/m4verick/Escritorio/Repo/ProgramacionDeRedes-2024/Receive/obj/Debug/net8.0/Receive.AssemblyInfoInputs.cache
+/home/m4verick/Escritorio/Repo/ProgramacionDeRedes-2024/Receive/obj/Debug/net8.0/Receive.AssemblyInfo.cs
+/home/m4verick/Escritorio/Repo/ProgramacionDeRedes-2024/Receive/obj/Debug/net8.0/Receive.csproj.CoreCompileInputs.cache
+/home/m4verick/Escritorio/Repo/ProgramacionDeRedes-2024/Receive/obj/Debug/net8.0/Receive.sourcelink.json
+/home/m4verick/Escritorio/Repo/ProgramacionDeRedes-2024/Receive/obj/Debug/net8.0/Receive.dll
+/home/m4verick/Escritorio/Repo/ProgramacionDeRedes-2024/Receive/obj/Debug/net8.0/refint/Receive.dll
+/home/m4verick/Escritorio/Repo/ProgramacionDeRedes-2024/Receive/obj/Debug/net8.0/Receive.pdb

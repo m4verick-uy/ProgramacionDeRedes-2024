@@ -1,36 +1,30 @@
-﻿using System.Text;
-using RabbitMQ.Client;
+﻿using RabbitMQ.Client;
+using System.Text;
 
-var factory = new ConnectionFactory { HostName = "localhost" };
-using var connection = factory.CreateConnection();
-using var channel = connection.CreateModel();
-
-channel.QueueDeclare(  //metodo para declarar una cola
-    queue: "hello",    //especifico el nombre de la cola
-    durable: false,    //no sobrevive a un reinicio del servidor, la cola se destruye 
-    exclusive: false,  //no quiero que solo un consumidor pueda conectarse a la cola
-    autoDelete: false, //no se elimina la cola cuando no haya consumidores
-    arguments: null);  //para no pasar argumentos adicionales
-
-bool salir = false;
-while (!salir)
+class Send
 {
-    Console.WriteLine("Escribe un mensaje: ");
-    string message = Console.ReadLine();
-    var body = Encoding.UTF8.GetBytes(message);
-    
-    channel.BasicPublish(       //metodo para publicar un mensaje    
-        exchange: string.Empty, //uso exchange direct
-        routingKey: "hello",    //especifico la cola por su nombre
-        basicProperties: null,  //no quiero pasar propiedades adicionales
-        body: body);            //el mensaje en bytes
-    
-    Console.WriteLine($" [x] Enviando: {message}");
-    if (message == "exit")
+    public static async Task Main(string[] args)
     {
-        salir = true;
+        var factory = new ConnectionFactory { HostName = "localhost" };
+        using var connection = await factory.CreateConnectionAsync();
+        using var channel = await connection.CreateChannelAsync();
+
+        await channel.QueueDeclareAsync(queue: "hello",       //especifico el nombre de la cola
+            durable: true,        //uso exchange direct
+            exclusive: false,     //no sobrevive a un reinicio del servidor, la cola se destruye 
+            autoDelete: false,    //no quiero que solo un consumidor pueda conectarse a la cola
+            arguments: null);
+
+        const string message = "Hello World!";
+        var body = Encoding.UTF8.GetBytes(message);   // Similar a la codificación de los send de sockets
+
+        await channel.BasicPublishAsync(exchange: string.Empty, // tipo de exchange es el Direct 
+            routingKey: "hello",    // especifico la cola por su nombre
+            body: body);            // el mensaje en bytes
+        Console.WriteLine($" [x] Sent {message}");
+
+        Console.WriteLine(" Press [enter] to exit.");
+        Console.ReadLine();
     }
 }
 
-Console.WriteLine(" Press [enter] to exit.");
-Console.ReadLine();
