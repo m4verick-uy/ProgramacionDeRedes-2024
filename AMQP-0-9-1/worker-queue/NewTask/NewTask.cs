@@ -5,7 +5,7 @@ var factory = new ConnectionFactory { HostName = "localhost" };
 using var connection = await factory.CreateConnectionAsync();
 using var channel = await connection.CreateChannelAsync();
 
-await channel.QueueDeclareAsync(queue: "task_queue", durable: true, exclusive: false, autoDelete: false,
+await channel.QueueDeclareAsync(queue: "task_queue", durable: false, exclusive: false, autoDelete: false,
     arguments: null);
 
 Console.WriteLine(" [x] Escribí una tarea y presioná Enter para enviarla. Cada punto = 1 seg de trabajo. Escribí 'salir' para terminar.");
