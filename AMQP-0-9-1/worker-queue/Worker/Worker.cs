@@ -11,7 +11,6 @@ await channel.QueueDeclareAsync(queue: "task_queue", durable: false, exclusive: 
 
 //fd
 
-
 Console.WriteLine(" [*] Esperando tareas. CTRL+C para salir.");
 
 var consumer = new AsyncEventingBasicConsumer(channel);

@@ -19,9 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker", "AMQP-0-9-1\worker
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "publish-subscribe", "publish-subscribe", "{224F2E83-B155-8514-CF5B-25DAC2AEEF52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitLog", "AMQP-0-9-1\publish-subscribe\EmitLog\EmitLog.csproj", "{66A597D7-D5E7-48FF-A971-DD294B5A45AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectvPublisher", "AMQP-0-9-1\publish-subscribe\DirectvPublisher\DirectvPublisher.csproj", "{66A597D7-D5E7-48FF-A971-DD294B5A45AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveLogs", "AMQP-0-9-1\publish-subscribe\ReceiveLogs\ReceiveLogs.csproj", "{6F0466DB-B168-4968-B0B0-87211AC89AB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectvSubscriber", "AMQP-0-9-1\publish-subscribe\DirectvSubscriber\DirectvSubscriber.csproj", "{6F0466DB-B168-4968-B0B0-87211AC89AB9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "routing", "routing", "{0F3271B6-CD81-F652-73BB-487C66ECCA18}"
 EndProject
