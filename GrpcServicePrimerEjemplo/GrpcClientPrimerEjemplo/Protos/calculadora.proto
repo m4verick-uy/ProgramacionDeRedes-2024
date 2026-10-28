@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcClientPrimerEjemplo";
+
+package calculadora;
+
+// Los "parámetros" de la función — viajan serializados como binario
+message SumaRequest {
+  double a = 1;   // campo 1
+  double b = 2;   // campo 2
+}
+
+// El "valor de retorno" de la función
+message SumaReply {
+  double resultado = 1;
+}
+
+// El contrato — equivale a ICalculadora
+service Calculadora {
+  rpc Sumar (SumaRequest) returns (SumaReply);
+}
